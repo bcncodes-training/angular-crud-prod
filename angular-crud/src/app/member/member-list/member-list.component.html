@@ -1,0 +1,14 @@
+<mat-nav-list>
+  <div fxFlex fxLayout="column" fxLayoutAlign="center" fxLayoutGap="15px">
+  <mat-list-item *ngFor="let member of members">
+    <a matLine [routerLink]="['/members',member.id]" routerLinkActive="router-link-active" >{{member.nombre}}</a>
+    <button mat-icon-button (click)="deleteMember(member.id)">
+      <mat-icon>delete</mat-icon>
+    </button>
+    <mat-divider></mat-divider>
+  </mat-list-item>
+</div>
+</mat-nav-list>
+
+
+<button mat-raised-button [routerLink]="['/addMember']">Añadir miembro</button>

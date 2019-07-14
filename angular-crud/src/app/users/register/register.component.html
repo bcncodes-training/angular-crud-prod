@@ -1,0 +1,11 @@
+<div class="example-container">
+  <form [formGroup]="registerForm" mat-form fxLayout="column" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label>Nombre</mat-label>
+      <input matInput [formControl]="registerForm.get('username')">
+      <!-- <mat-placeholder>escribe un nombre de usuario</mat-placeholder> -->
+    </mat-form-field>
+      <button matButton type="submit" mat-button><mat-icon>save</mat-icon>Enviar</button>
+  </form>
+
+</div>
