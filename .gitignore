@@ -8,8 +8,8 @@
 /bazel-out
 
 # dependencies
-angular-crud/node_modules/
-json-server/node_modules/
+
+/node_modules
 
 # profiling files
 chrome-profiler-events.json
